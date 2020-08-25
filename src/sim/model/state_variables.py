@@ -10,9 +10,6 @@ from src.sim.model.utils import *
 from src.sim.sim_setup import SIMULATION_TIME_STEPS, MONTE_CARLO_RUNS
 # Initial Values
 signal = 0
-# state = 0
-adoption = Adoption()
-# pool = Adoption_Pool() # Iniialized in config loop using source_pool parameter
 
 MILESTONES = [0, 1,2,3,4]
 milestone_df = pd.DataFrame(MILESTONES, columns = ['Name'])
@@ -26,7 +23,8 @@ genesis_states = {
     'public_alpha': signal,
     'milestone' : milestone_df,
     'milestone_progress' : 0, 
-    # 'adoption': adoption,  # Agent Based
-    # 'pool' : pool,  # Iniialized in config loop using source_pool parameter
+    'expected_milestone_interpolation' : 0, 
+    'milestone_difference_signal': 0,  # Agent Based
+
 
 }
