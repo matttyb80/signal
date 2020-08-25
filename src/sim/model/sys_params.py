@@ -4,12 +4,16 @@ from pprint import pprint
 import numpy as np
 import itertools
 
+from src.sim.sim_setup import SIMULATION_TIME_STEPS, MONTE_CARLO_RUNS
+
 ### CLAIMS PARAMETERS #################################
 # noisy uniform distribution of claims signalling
 # parameters for magnitude, frequency, and variance
-CLAIMS_MAGNITUDE = [10] # tablet use, function of activity + adoption
+CLAIMS_MAGNITUDE = 100 / (SIMULATION_TIME_STEPS)
+print(CLAIMS_MAGNITUDE)
+CLAIMS_MAGNITUDE = [CLAIMS_MAGNITUDE] # tablet use, function of activity + adoption
 CLAIMS_FREQUENCY = [1]  # 1 =daily
-CLAIMS_STD = [0.5, 1, 2]
+CLAIMS_STD = [0.25, 0.5, 0.75]
 
 # Milestone event signalling magnitude and expected frequency
 # large scale and low frequency

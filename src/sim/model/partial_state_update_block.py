@@ -11,6 +11,7 @@ partial_state_update_block = [
         },
         'variables': {
             'public_alpha': s_signal,
+            'milestone_progress': s_granular_progress
         }
     },
     # {
