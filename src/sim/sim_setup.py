@@ -4,7 +4,7 @@
 SIMULATION_TIME_STEPS = int(365)  # timestep
 
 # N monte carlo runs
-MONTE_CARLO_RUNS = 1
+MONTE_CARLO_RUNS = 3
 
 # time configuration parameters
 DAYS_PER_TIMESTEP = 1

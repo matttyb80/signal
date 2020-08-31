@@ -1,5 +1,6 @@
 
 from cadCAD.configuration import Experiment #.append_configs
+# from cadCAD.configuration import append_configs
 from cadCAD.configuration.utils import config_sim
 # if test notebook is in parent above /src
 from src.sim.model.state_variables import genesis_states
@@ -38,6 +39,7 @@ exp = Experiment()
 
 # Experiment.append_configs()
 exp.append_configs(
+# append_configs(
     sim_configs=sim_config,
     initial_state=genesis_states,
     partial_state_update_blocks=partial_state_update_block
