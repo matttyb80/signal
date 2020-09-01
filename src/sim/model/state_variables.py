@@ -7,10 +7,13 @@ import pandas as pd
 # import scipy.stats as stats
 # from .sys_params import sys_params
 from src.sim.model.utils import *
-from src.sim.sim_setup import SIMULATION_TIME_STEPS, MONTE_CARLO_RUNS
+from src.sim.sim_setup import SIMULATION_TIME_STEPS
 # Initial Values
 signal = 0
 
+## ASSUMED 4 milestone project ###
+## ASSUMED EQUALLY spaced time-wise ###
+## ASSUMED uniformly distributed milestone progress. Each milestone signals same amount of progress #  
 MILESTONES = [0, 1,2,3,4]
 milestone_df = pd.DataFrame(MILESTONES, columns = ['Name'])
 milestone_df['Completion_Time'] =  SIMULATION_TIME_STEPS * milestone_df.Name // (max(MILESTONES))
@@ -25,6 +28,4 @@ genesis_states = {
     'milestone_progress' : 0, 
     'expected_milestone_interpolation' : 0, 
     'milestone_difference_signal': 0,  # Agent Based
-
-
 }
