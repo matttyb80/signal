@@ -10,7 +10,7 @@ from src.sim.sim_setup import SIMULATION_TIME_STEPS, MONTE_CARLO_RUNS
 # noisy uniform distribution of claims signalling
 # parameters for magnitude, frequency, and variance
 CLAIMS_MAGNITUDE = 100 / (SIMULATION_TIME_STEPS)
-print(CLAIMS_MAGNITUDE)
+# print(CLAIMS_MAGNITUDE)
 CLAIMS_MAGNITUDE = [CLAIMS_MAGNITUDE] # tablet use, function of activity + adoption
 CLAIMS_FREQUENCY = [1]  # 1 =daily
 CLAIMS_STD = [0.25, 0.5, 0.75]

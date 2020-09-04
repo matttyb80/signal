@@ -26,6 +26,7 @@ genesis_states = {
     'public_alpha': signal,
     'milestone' : milestone_df,
     'milestone_progress' : 0, 
-    'expected_milestone_interpolation' : 0, 
+    'expected_milestone_linear' : 0, 
+    'expected_milestone_step' : 0,
     'milestone_difference_signal': 0,  # Agent Based
 }

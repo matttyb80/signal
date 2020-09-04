@@ -1,4 +1,4 @@
-from src.sim.model.parts.marketing_signal import *
+from src.sim.model.parts.progress_signal import *
 from src.sim.model.parts.adoption import *
 
 partial_state_update_block = [
@@ -6,13 +6,14 @@ partial_state_update_block = [
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
     # PUBLIC MILESTONE SIGNAL
         'policies': {
-            'marketing_rate': p_marketing_rate,
-            'p_marketing_shock' : p_marketing_shock,
+            'milestone_rate': p_milestone_rate,
+            'p_milestone_shock' : p_milestone_shock,
         },
         'variables': {
             'public_alpha': s_signal,
             'milestone_progress': s_granular_progress,
-            'expected_milestone_interpolation': s_expected_milestone_interpolation,
+            'expected_milestone_linear': s_expected_milestone_linear,
+            'expected_milestone_step': s_expected_milestone_step,
         }
     },
     {
