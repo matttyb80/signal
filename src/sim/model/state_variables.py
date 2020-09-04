@@ -28,5 +28,6 @@ genesis_states = {
     'milestone_progress' : 0, 
     'expected_milestone_linear' : 0, 
     'expected_milestone_step' : 0,
+    'expected_milestone_quad' : 0,
     'milestone_difference_signal': 0,  # Agent Based
 }

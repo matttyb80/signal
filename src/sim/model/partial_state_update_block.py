@@ -14,6 +14,7 @@ partial_state_update_block = [
             'milestone_progress': s_granular_progress,
             'expected_milestone_linear': s_expected_milestone_linear,
             'expected_milestone_step': s_expected_milestone_step,
+            'expected_milestone_quad': s_expected_milestone_quad,
         }
     },
     {
